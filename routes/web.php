@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 
 Route::get('/spot', 'GadgetController@spot');
+Route::get('/home', function() {
+	return view('layouts.default');
+});
