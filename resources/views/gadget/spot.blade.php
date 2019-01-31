@@ -13,8 +13,8 @@
                 <div class="card-body ">
                   <form method="#" action="#">
                     <div class="form-group bmd-form-group">
-                      <label for="exampleEmail" class="bmd-label-floating">Email Address</label>
-                      <input type="email" class="form-control" id="exampleEmail">
+                      <label for="exampleEmail" class="bmd-label-floating">Enter your text here</label>
+                      <input type="email" id="spot" class="form-control" id="exampleEmail">
                     </div>
                     <div class="form-group bmd-form-group">
                       <label for="examplePass" class="bmd-label-floating">Password</label>
@@ -37,3 +37,14 @@
             </div>
 	      </div>
 @endsection
+<script>
+alert('hi');
+});
+
+$( document ).ready(function() {
+    console.log( "ready!" );
+});
+
+
+
+</script>
