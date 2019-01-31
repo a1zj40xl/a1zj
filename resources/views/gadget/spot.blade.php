@@ -1,16 +1,39 @@
+@extends('layouts.default')
 
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
-  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <link href="assets/css/material-dashboard.min.css?v=2.1.0" rel="stylesheet" />
-  <title>
-asdf
-  </title>
-</head>
-asdf
-</html>
+@section('content')
+<div class="row">
+            <div class="col-md-6">
+              <div class="card ">
+                <div class="card-header card-header-rose card-header-icon">
+                  <div class="card-icon">
+                    <i class="material-icons">mail_outline</i>
+                  </div>
+                  <h4 class="card-title">Spot Remover</h4>
+                </div>
+                <div class="card-body ">
+                  <form method="#" action="#">
+                    <div class="form-group bmd-form-group">
+                      <label for="exampleEmail" class="bmd-label-floating">Email Address</label>
+                      <input type="email" class="form-control" id="exampleEmail">
+                    </div>
+                    <div class="form-group bmd-form-group">
+                      <label for="examplePass" class="bmd-label-floating">Password</label>
+                      <input type="password" class="form-control" id="examplePass">
+                    </div>
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" value=""> Subscribe to newsletter
+                        <span class="form-check-sign">
+                          <span class="check"></span>
+                        </span>
+                      </label>
+                    </div>
+                  </form>
+                </div>
+                <div class="card-footer ">
+                  <button type="submit" class="btn btn-fill btn-rose">Submit</button>
+                </div>
+              </div>
+            </div>
+	      </div>
+@endsection

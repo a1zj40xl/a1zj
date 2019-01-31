@@ -79,9 +79,11 @@
         <div class="content">
           <div class="container-fluid">
 <!-- Main body content -->
-                      </div>
-                    </div>
-                  </div>
+              @yield('content')
+
+          </div>
+        </div>
+      </div>
 <!-- footer -->
 @include('layouts.footer')
 <!-- end of footer -->
