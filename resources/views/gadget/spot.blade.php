@@ -37,7 +37,6 @@
             </div>
 	      </div>
 @endsection
-
 <script>
 $( document ).ready( fucntion() {
 alert('hi');
