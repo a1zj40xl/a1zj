@@ -2,51 +2,55 @@
 
 @section('content')
 <div class="row">
-            <div class="col-md-6">
+	<div class="col-md-6">
               <div class="card ">
                 <div class="card-header card-header-rose card-header-icon">
                   <div class="card-icon">
-                    <i class="material-icons">mail_outline</i>
+                    <i class="material-icons">contacts</i>
                   </div>
                   <h4 class="card-title">Spot Remover</h4>
                 </div>
                 <div class="card-body ">
-                  <form method="#" action="#">
-                    <div class="form-group bmd-form-group">
-                      <label for="exampleEmail" class="bmd-label-floating">Enter your text here</label>
-                      <input type="email" id="spot" class="form-control" id="exampleEmail">
+                  <form class="form-horizontal">
+                    <div class="row">
+                      <label class="col-md-3 col-form-label">Text</label>
+                      <div class="col-md-9">
+                        <div class="form-group has-default bmd-form-group">
+                          <input id="spot" type="email" class="form-control" autocomplete="off">
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group bmd-form-group">
-                      <label for="examplePass" class="bmd-label-floating">Password</label>
-                      <input type="password" class="form-control" id="examplePass">
+                    <div class="row">
+                      <label class="col-md-3 col-form-label">Result</label>
+                      <div class="col-md-9">
+                        <div class="form-group has-default bmd-form-group">
+                          <input id="spotResult" type="email" class="form-control" autocomplete="off">
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-check">
-                      <label class="form-check-label">
-                        <input class="form-check-input" type="checkbox" value=""> Subscribe to newsletter
-                        <span class="form-check-sign">
-                          <span class="check"></span>
-                        </span>
-                      </label>
+                    <div class="row">
+                      <label class="col-md-3"></label>
+                      <div class="col-md-9">
+                        <div class="form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" value=""> Remember me
+                            <span class="form-check-sign">
+                              <span class="check"></span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
                     </div>
                   </form>
                 </div>
                 <div class="card-footer ">
-                  <button type="submit" class="btn btn-fill btn-rose">Submit</button>
+                  <div class="row">
+                    <div class="col-md-9">
+                      <button type="submit" class="btn btn-fill btn-rose">Sign in</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
+            </div>	
 	      </div>
 @endsection
-
-<script>
-$( document ).ready( fucntion() {
-alert('hi');
-});
-
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
-
-
-
-</script>

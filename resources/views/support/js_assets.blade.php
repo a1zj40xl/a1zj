@@ -42,6 +42,23 @@
               <script src="../assets/js/material-dashboard.min.js?v=2.1.0" type="text/javascript"></script>
               <!-- Material Dashboard DEMO methods, don't include it in your project! -->
               <script src="../assets/demo/demo.js"></script>
+<!-- spot remover -->              
+<script type="text/javascript">
+  $(document).ready(function(){
+    var Timer;
+    $('#spot').on('keyup', function(){
+      clearTimeout(Timer);
+      Timer = setTimeout(SpotRemover, 1000);
+    });
+    function SpotRemover(){
+      var result = $("#spot").val();
+      result = result.replace(/\D/g,'');
+      $("#spotResult").val(result);
+    }
+
+  });
+
+</script>
               <script>
                 $(document).ready(function() {
                   $().ready(function() {
