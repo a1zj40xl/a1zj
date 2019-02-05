@@ -26,4 +26,5 @@ Route::get('/home', function() {
 //auto push test   
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/spot', 'HomeController@index')->name('home');
+Route::get('/spot1', 'GadgetController@spot')->name('home');
