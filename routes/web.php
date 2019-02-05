@@ -24,3 +24,6 @@ Route::get('/home', function() {
 
 //28 years
 //auto push test   
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
