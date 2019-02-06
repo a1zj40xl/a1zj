@@ -27,4 +27,4 @@ Route::get('/home', function() {
 Auth::routes();
 
 Route::get('/spot', 'HomeController@index')->name('home');
-Route::get('/spot1', 'GadgetController@spot')->name('home');
+Route::get('/spot1', 'GadgetController@spot1');

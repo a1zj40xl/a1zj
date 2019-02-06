@@ -38,14 +38,7 @@
   <meta property="og:image" content="https://s3.amazonaws.com/creativetim_bucket/products/51/original/opt_mdp_thumbnail.jpg" />
   <meta property="og:description" content="Material Dashboard PRO is a Premium Material Bootstrap 4 Admin with a fresh, new design inspired by Google's Material Design." />
   <meta property="og:site_name" content="Creative Tim" />
-  <!--     Fonts and icons     -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <!-- CSS Files -->
-  <link href="../../assets/css/material-dashboard.min.css?v=2.1.0" rel="stylesheet" />
-  <!-- CSS Just for demo purpose, don't include it in your project -->
-  <link href="../../assets/demo/demo.css" rel="stylesheet" />
-  <!-- Google Tag Manager -->
+  @include('support.css_assets')
   <script>
     (function(w, d, s, l, i) {
       w[l] = w[l] || [];
@@ -135,16 +128,6 @@
                 </div>
                 <div class="card-body ">
                   <p class="card-description text-center">Or Be Classical</p>
-                  <span class="bmd-form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text">
-                          <i class="material-icons">face</i>
-                        </span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="First Name...">
-                    </div>
-                  </span>
                   <span class="bmd-form-group">
                     <div class="input-group">
                       <div class="input-group-prepend">
