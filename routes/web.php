@@ -28,3 +28,13 @@ Auth::routes();
 
 Route::get('/spot', 'HomeController@index')->name('home');
 Route::get('/spot1', 'GadgetController@spot1');
+Route::get('qr_code', 'GadgetController@qr_code');
+
+Route::get('qr-code-g', function () {
+  \QrCode::size(500)
+            ->format('png')
+            ->generate('ItSolutionStuff.com', public_path('assets/img/qrcode.png'));
+    
+  return view('gadget.qr_code');
+    
+});

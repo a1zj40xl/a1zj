@@ -59,6 +59,22 @@
   });
 
 </script>
+
+<!-- qr code -->
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    var Timer;
+      $('#qr_code').on('keyup', function(){
+        clearTimeout(Timer);
+        Timer = setTimeout(QrCode, 1000);
+      });
+      function QrCode(){
+          var content = $('#qr_code').val();
+          alert(content);
+      }
+    }); 
+</script>
               <script>
                 $(document).ready(function() {
                   $().ready(function() {
